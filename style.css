@@ -62,7 +62,6 @@ main {
 }
 
 #meme-image-container {
-  border: 1px #000 solid;
   background-color: #fff;
   height: 500px;
   width: 500px;
@@ -74,6 +73,7 @@ main {
   z-index: 0;
 }
 
+/* Requisito 4 -  Adicione o texto que será inserido sobre a imagem deve ter uma cor, sombra e tamanho específicos. */
 #meme-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
@@ -88,4 +88,36 @@ main {
   top: -30%;
   overflow-wrap: break-word;
   z-index: 1;
+}
+
+#buttons {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+#fire,
+#water,
+#earth {
+  width: 8em;
+  height: 3em;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#fire {
+  background-color: rgb(255, 0, 0);
+}
+
+#water {
+  background-color: rgb(0, 0, 255);
+}
+
+#earth {
+  background-color: rgb(0, 128, 0);
+}
+
+button > p {
+  font-size: x-large;
 }

@@ -26,3 +26,52 @@ window.addEventListener('load', function () {
       }
     });
 });
+
+// Requisito 3 - Adicione uma moldura no container. A moldura deve ter 1 pixel de largura, deve ser preta e do tipo 'solid'. A área onde a imagem aparecerá deve ter fundo branco.
+let memeContainer = document.getElementById('meme-image-container');
+
+memeContainer.style.border = '1px solid rgb(0, 0, 0)';
+
+// Requisito 6 - Permita a quem usa customizar o meme escolhido acrescentando a ele uma de três bordas. A página deve ter três botões, que ao serem clicados devem cada um trocar a própria borda ao redor do container.
+
+//FIRE BUTTON
+let fireButton = document.querySelector('#fire');
+function addFireBorder() {
+  if (
+    memeContainer.style.getPropertyValue('border') !==
+    '3px dashed rgb(255, 0, 0)'
+  ) {
+    memeContainer.style.border = '3px dashed rgb(255, 0, 0)';
+  } else {
+    memeContainer.style.border = '1px solid rgb(0, 0, 0)';
+  }
+}
+fireButton.addEventListener('click', addFireBorder);
+
+//WATER BUTTON
+let waterButton = document.querySelector('#water');
+function addWaterBorder() {
+  if (
+    memeContainer.style.getPropertyValue('border') !==
+    '5px double rgb(0, 0, 255)'
+  ) {
+    memeContainer.style.border = '5px double rgb(0, 0, 255)';
+  } else {
+    memeContainer.style.border = '1px solid rgb(0, 0, 0)';
+  }
+}
+waterButton.addEventListener('click', addWaterBorder);
+
+//EARTH BUTTON
+let earthButton = document.querySelector('#earth');
+function addEarthBorder() {
+  if (
+    memeContainer.style.getPropertyValue('border') !==
+    '6px groove rgb(0, 255, 0)'
+  ) {
+    memeContainer.style.border = '6px groove rgb(0, 128, 0)';
+  } else {
+    memeContainer.style.border = '1px solid rgb(0, 0, 0)';
+  }
+}
+earthButton.addEventListener('click', addEarthBorder);
