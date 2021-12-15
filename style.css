@@ -22,6 +22,7 @@ body {
   margin: 2em auto;
   border-radius: 20px;
   padding: 0.5em;
+  text-align: center;
 }
 
 header {
@@ -120,4 +121,30 @@ main {
 
 button > p {
   font-size: x-large;
+}
+
+h2 {
+  margin: 0.5em;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--color3);
+  text-shadow: 2px 2px 2px #000;
+}
+
+#memes-prontos {
+  margin: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+#meme-1,
+#meme-2,
+#meme-3,
+#meme-4 {
+  border: none;
+  cursor: pointer;
+}
+
+button > img {
+  width: 100px;
 }

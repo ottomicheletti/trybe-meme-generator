@@ -75,3 +75,14 @@ function addEarthBorder() {
   }
 }
 earthButton.addEventListener('click', addEarthBorder);
+
+// Reqsuito 7 - Tenha um conjunto de quatro imagens pré prontas de memes famosos para o usuário escolher. Mostre miniaturas das imagens e, mediante clique do usuário, essa imagem deve aparecer dentro da moldura do elemento de container.
+const memeImage = document.getElementById('meme-image');
+const readyMemes = document.getElementById('memes-prontos');
+
+function readyMemeImage(event) {
+  let readyImage = event.target.getAttribute('src');
+
+  memeImage.src = readyImage;
+}
+readyMemes.addEventListener('click', readyMemeImage);
