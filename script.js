@@ -67,7 +67,7 @@ let earthButton = document.querySelector('#earth');
 function addEarthBorder() {
   if (
     memeContainer.style.getPropertyValue('border') !==
-    '6px groove rgb(0, 255, 0)'
+    '6px groove rgb(0, 128, 0)'
   ) {
     memeContainer.style.border = '6px groove rgb(0, 128, 0)';
   } else {
