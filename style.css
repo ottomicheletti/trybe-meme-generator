@@ -77,15 +77,15 @@ main {
 #meme-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 5px 5px 5px #000;
   text-transform: uppercase;
   word-spacing: 0.2em;
-  font-size: xx-large;
+  font-size: 30px;
   color: #fff;
   padding: 0.5em;
   height: fit-content;
   position: relative;
-  top: -35%;
+  top: -30%;
   overflow-wrap: break-word;
   z-index: 1;
 }

@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
     .addEventListener('change', function () {
       const file = this.files[0];
       if (file) {
-        var img = document.querySelector('#meme-image');
+        let img = document.querySelector('#meme-image');
         img.onload = () => {
           URL.revokeObjectURL(img.src); // no longer needed, free memory
         };
