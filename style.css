@@ -53,8 +53,8 @@ label {
 }
 
 main {
-  height: 504px;
-  width: 504px;
+  height: 512px;
+  width: 512px;
   margin: 1em auto;
 }
 
@@ -63,6 +63,7 @@ main {
 }
 
 #meme-image-container {
+  margin: 0 auto;
   background-color: #fff;
   height: 500px;
   width: 500px;
